@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu nhóm</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            margin: 0;
+            background: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #330099;
+            margin-top: 0;
+        }
+
+        h4 {
+            text-align: center;
+            color: #ff62b0;
+            margin-top: 40px;
+        }
+
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff62b0;
+            color: white;
+        }
+
+        .thanhvien {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .thanhvien img {
+            width: 160px;
+            height: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .thongtin {
+            flex: 1;
+            text-align: left;
+        }
+
+        .video-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto 40px auto;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .thanhvien {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .thanhvien img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .thongtin {
+                text-align: center;
+            }
+
+            table {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>NHÓM 6 LỚP 12A1</h2>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Tên thành viên</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="#tv1">Nguyễn Trần Như Ngọc</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="#tv2">Nguyễn Minh Quân</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="#tv3">Hoàng Ngọc Trâm</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="#tv4">Lê Thiện Hòa</a></td>
+        </tr>
+    </table>
+
+    <!-- Thành viên 1 -->
+    <div class="thanhvien" id="tv1">
+        <img src="ngoc.jpg" alt="Nguyễn Trần Như Ngọc">
+        <div class="thongtin">
+            <h3>Nguyễn Trần Như Ngọc</h3>
+            <p><strong>Ngày sinh:</strong> 22/11/2008</p>
+            <p><strong>Nơi sinh:</strong> Kon Tum</p>
+            <p><strong>Bài hát yêu thích:</strong>
+                <a href="https://www.youtube.com/watch?v=1CrNCiIU_xo" target="_blank">
+                    Bảng chữ cái tiếng Anh
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Thành viên 2 -->
+    <div class="thanhvien" id="tv2">
+        <img src="quan.jpg" alt="Nguyễn Minh Quân">
+        <div class="thongtin">
+            <h3>Nguyễn Minh Quân</h3>
+            <p><strong>Ngày sinh:</strong> 25/08/2008</p>
+            <p><strong>Nơi sinh:</strong> Kon Tum</p>
+            <p><strong>Bài hát yêu thích:</strong>
+                <a href="https://www.youtube.com/watch?v=pere9tdr6Xc" target="_blank">
+                    Hỏi thăm nhau
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Thành viên 3 -->
+    <div class="thanhvien" id="tv3">
+        <img src="tram.jpg" alt="Hoàng Ngọc Trâm">
+        <div class="thongtin">
+            <h3>Hoàng Ngọc Trâm</h3>
+            <p><strong>Ngày sinh:</strong> 15/12/2008</p>
+            <p><strong>Nơi sinh:</strong> Kon Tum</p>
+            <p><strong>Bài hát yêu thích:</strong>
+                <a href="https://www.youtube.com/watch?v=mAiC9f2Cp0s" target="_blank">
+                    Thiếu niên hoa hồng
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Thành viên 4 -->
+    <div class="thanhvien" id="tv4">
+        <img src="hoa.jpg" alt="Lê Thiện Hòa">
+        <div class="thongtin">
+            <h3>Lê Thiện Hòa</h3>
+            <p><strong>Ngày sinh:</strong> 26/01/2008</p>
+            <p><strong>Nơi sinh:</strong> Kon Tum</p>
+            <p><strong>Bài hát yêu thích:</strong>
+                <a href="https://www.youtube.com/watch?v=JzQILwwRvnQ" target="_blank">
+                    Bát cơm mặn
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <h4>VIDEO NẤU ĂN CỦA NHÓM</h4>
+
+   <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/x8oJ3r_T-ZE?si=bowDERqKBhr5Hznw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    <footer>
+        <p>Trang này được lập bởi <em>Nhóm 6</em></p>
+    </footer>
+
+</body>
